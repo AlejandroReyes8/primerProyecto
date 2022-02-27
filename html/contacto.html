@@ -7,71 +7,78 @@
     <link rel="stylesheet" href="../styles.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg">
 
+    
     <header>
-        <img src="../img/logo.png" alt="">
-        
-       
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo de la empresa" class="logo-img">
+        </div>
         <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="descargas.html">Descargas</a></li>
-            </ul>
+            <a class="active" href="../index.html">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="skills.html">Skills</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="descargas.html">Descargas</a>
         </nav>
-
     </header>
 
 
-    <main>
-        <section>
+    <main class="mid">
+
+        <section >
             <h1>Contactame</h1>
             <fieldset>
-            <form action="">
+                <form action="" >
 
-                <p>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Ingrese su nombre" id="nombre"> 
-                </p>
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Ingrese su nombre" id="nombre"> 
+                    </p>
 
-                <p>
-                    <label for="correo">Correo Electronico</label>
-                    <input type="text" placeholder="Ingrese su correo " id="correo">
-                </p>
+                    <p>
+                        <label for="correo">Correo Electronico</label>
+                        <input type="text" placeholder="Ingrese su correo " id="correo">
+                    </p>
 
-                <p>
-                    <label for="telefono">Telefono Movil</label>
-                    <input type="text" placeholder="Ingrese su telefono movil" id="telefono">
-                </p>
-                
-                <p>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aqui..."></textarea>
+                    <p>
+                        <label for="telefono">Telefono Movil</label>
+                        <input type="text" placeholder="Ingrese su telefono movil" id="telefono">
+                    </p>
+                    
+                    <p>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aqui..."></textarea>
 
-                </p>
+                    </p>
 
-                <p><input type="submit" value="Enviar información"></p>
+                    <p><input type="submit" value="Enviar información"></p>
 
 
-            </form>
-        </fieldset>
+                </form>
+            </fieldset>
         </section>
     </main>
 
 
-    <footer>
-        <div>
+    <footer class="bottomC">
+
+        <div class="copy">
             <p>Copyright © 2022</p>
         </div>
 
-            <img src="../img/logo.png" alt="" id="imagen">
-            <img src="../img/fb.png" alt=""  id="imagen">
-            <img src="../img/pint.png" alt="" id="imagen">
-            <img src="../img/insta.png" alt="" id="imagen">
+        <div class="logo2">
+            <img src="../img/logo.png" alt="">
+        </div>
+
+        <div class="redes">
+            
+            <img src="../img/fb.png" alt="">
+            <img src="../img/pint.png" alt="">
+            <img src="../img/insta.png" alt="">
+        </div>   
+        
     </footer>
-    
+
 </body>
 </html>
