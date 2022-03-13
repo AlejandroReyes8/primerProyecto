@@ -207,70 +207,40 @@ main{
 
 
 
-
-
-
-
 /*PROYECTOS*/
-
 .mainP{
     display: grid;
-   
     grid-template-columns: auto auto  auto  auto;
+    @include grid() ;
 }
-
-.mainP item{
-    
-    border: 1px solid   black;
-}
-
-
-
-
 
 /*PROYECTOS*/
-
 
 /*skills*/
 .midS{
-    width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
+    @include grid() ;
+    
 }
-
-
-
-
-
-
-
 /*skills*/
 
 
-
 /*Contacto*/
-
 .midC {
     display: grid;
     grid-template-columns: auto auto;
+    @include grid()
+
 }
-
-
-
-
 /*Contacto*/
-
-
 
 /*Descargas*/
 .midD{
     display: grid;
     grid-template-columns: auto auto;
-}
+    @include grid() ;
 
-.midD item a{
-    text-decoration: none;
-    font-size: larger;
 }
 
 /*Descargas*/
@@ -282,17 +252,11 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@mixin grid {
+    @media (max-width:480px){
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+}
 
 
