@@ -1,0 +1,167 @@
+    
+@mixin fonts1 ($color,$size) {
+    color:$color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $size;
+    text-align:left;
+}
+    
+@mixin fonts2 ($color,$size) {
+    color:$color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $size;
+    text-align:justify;
+}
+
+@mixin fonts3 ($color,$size) {
+    color:$color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $size;
+    text-align:left;
+}
+
+h1{
+    @include fonts1(#1d5270, 50px)
+}
+h2{
+    @include  fonts1(#1d5270,30px)
+}
+p{
+    @include fonts2(#1d5270, 15px)
+}
+
+h3{
+    @include fonts3(#dddddd,40px )
+}
+
+/*SET*/
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+display: grid;
+min-height: 100vh;
+grid-template-rows: auto 1fr auto;
+}
+/*SET*/
+
+
+
+
+/*MID  INDEX*/
+
+@media (max-width:800px){
+
+
+    .titulo {
+        grid-area: titulo;
+    
+    }
+    
+    .slider{
+        grid-area: slider;
+    
+    }
+    
+    .about{
+        grid-area: about; 
+    
+    }
+    
+    .foto{
+        grid-area: foto;
+    
+    }
+    
+    .main{
+        max-width: 100%;
+        width: 90%;
+        display: grid;
+        gap: 10px;
+        grid-template: 
+        "titulo" 20%
+        "slider" 30%
+        "about"  25%
+        "foto"   25%
+        ;
+    }
+    
+    }
+    
+    
+    main{    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    
+    .main .titulo,
+    .main .slider,
+    .main .foto,
+    .main .about {
+        padding: 20px;
+        border: 1px solid #000000;
+    }
+    
+    
+    .main .titulo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;     
+    }
+    
+    /*MIDINDEX*/
+    
+    
+    
+    
+    
+    /*MID PROYECTOS*/
+    .mainP{
+        display: grid;
+        grid-template-columns: auto auto  auto  auto;
+        padding: 5%
+       
+    }
+    
+    /*MID PROYECTOS*/
+    
+    /*MID SKILLS*/
+    .midS{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10%;
+        
+        
+    }
+    /*MIDSKILLS*/
+    
+    
+    /*MID CONTACTO*/
+    .midC {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5%
+       
+    
+    }
+    /*MID CONTACTO*/
+    
+    /*MID DESCARGAS*/
+    .midD{
+        display: grid;
+        grid-template-columns: auto auto;
+
+        padding:5%
+        
+    }
+    
+    /*MID DESCARGAS*/
+    
+    
