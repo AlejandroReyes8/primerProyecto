@@ -53,7 +53,6 @@ nav ul li a{
     color: #dddddd;
     font-size: 20px;
     text-decoration: none;
- 
 
 }
 
@@ -63,4 +62,16 @@ nav ul li a{
     padding: 10px 30px;
     color: #dddddd;
     border-radius: 20px;
+}
+
+
+.toggle{
+
+    display: none;
+    line-height: 60px;
+}
+
+@media (max-width:800px){
+
+    
 }

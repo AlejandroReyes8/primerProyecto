@@ -35,92 +35,73 @@ h3{
 }
 
 /*SET*/
-*{
-    margin: 0;
-    padding: 0%;
+*{  
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
-}
-
-body{
-display: grid;
-min-height: 100vh;
-grid-template-rows: auto 1fr auto;
 }
 /*SET*/
 
 
 
 
+
 /*MID  INDEX*/
+.main{
+    padding-top: 150px;
+    min-height:100vh;
+    width: 90%;
+    max-width: 100%;
+    margin: 1.6em auto;
+    display: grid;
+    gap:1.6em;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+    justify-content: center;
+}
 
-@media (max-width:800px){
+.main > .title{
+    padding: 30px;
+    
+    grid-column: span 2 ;
+}
+.main > .slider{
+    padding: 30px;
+
+    grid-column: span 2;
+    
+}
+
+.main > .about{
+    padding: 30px;
+    
+    grid-column: span 2;
+ 
+}
+.main > .foto{
+    padding: 30px;
+    grid-column: span 2;
+    width: 70%;
+
+}
 
 
-    .titulo {
-        grid-area: titulo;
-    
+
+
+@media screen  and(max-width:800px){
+    .main > .title,
+    .main > .slider,
+    .main > .about,
+    .main > .foto{
+        grid-column: 1/-1;
     }
+
     
-    .slider{
-        grid-area: slider;
+}
+
+
     
-    }
-    
-    .about{
-        grid-area: about; 
-    
-    }
-    
-    .foto{
-        grid-area: foto;
-    
-    }
-    
-    .main{
-        max-width: 100%;
-        width: 90%;
-        display: grid;
-        gap: 10px;
-        grid-template: 
-        "titulo" 20%
-        "slider" 30%
-        "about"  25%
-        "foto"   25%
-        ;
-    }
-    
-    }
-    
-    
-    main{    
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    
-    }
-    
-    .main .titulo,
-    .main .slider,
-    .main .foto,
-    .main .about {
-        padding: 20px;
-        border: 1px solid #000000;
-    }
-    
-    
-    .main .titulo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;     
-    }
-    
-    /*MIDINDEX*/
-    
-    
-    
-    
+/*MID INDEX*/
     
     /*MID PROYECTOS*/
     .mainP{
